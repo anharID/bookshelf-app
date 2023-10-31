@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f0f8ff;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.head_bar {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #242f9b;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.input_section > h2 {
+  text-align: center;
+  color: #646fd4;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+  color: #646fd4;
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: #646fd4;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search_section {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.search_section > h2 {
+  color: #646fd4;
+}
+
+.search_section > form {
+  margin: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+.search_section > form > input {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-family: Raleway, sans-serif;
+  background: white;
+  border: 2px solid #646fd4;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 18px;
+  outline: none;
+  color: #646fd4;
+}
+
+.btn-submit {
+  font-family: Raleway, sans-serif;
+  border-radius: 16px;
+  padding: 12px;
+  border: 2px solid #646fd4;
+  background: white;
+  color: #646fd4;
+  font-size: 18px;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 8px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #646fd4;
+  color: white;
+}
+
+.book_shelf {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.book_shelf > h2 {
+  color: #646fd4;
+  text-align: center;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid #5f30e2;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  overflow-wrap: break-word;
+  margin: 8px 0;
+  color: #646fd4;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  font-family: Raleway, sans-serif;
+  border-radius: 16px;
+  padding: 12px;
+  color: #5f30e2;
+  font-size: 18px;
+  margin-right: 10px;
+  align-self: flex-center;
+  cursor: pointer;
+  outline: none;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: white;
+  color: darkgreen;
+  border: 2px solid darkgreen;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green:hover {
+  background: darkgreen;
+  color: white;
+}
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: white;
+  color: darkred;
+  border: 2px solid darkred;
+}
+.book_shelf > .book_list > .book_item > .action > .red:hover {
+  background: darkred;
+  color: white;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    margin: 0;
+    width: 100%;
+  }
+
+  .input_section {
+    width: 100%;
+  }
+
+  .search_section {
+    width: 100%;
+  }
+
+  .book_shelf {
+    width: 100%;
+  }
+
+  .book_shelf > .book_list > .book_item > .action {
+    display: flex;
+    flex-direction: column;
+  }
+  .book_shelf > .book_list > .book_item > .action > button {
+    margin: 5px;
+  }
+}
